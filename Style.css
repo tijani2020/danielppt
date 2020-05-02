@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background: linear-gradient(#76d876 , #11d3f1 );
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+.containner {
+    background-color: white;
+    width: 650px;
+    height: 500px;
+    margin: auto;
+    margin-top: 65px;
+   
+    border-radius: 15px;
+  display: flex;
+}
+
+.slider {
+    background-image: url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    animation-name: slider;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes slider {
+
+    0% {
+        background-image: url(images/1.jpg);
+    }
+
+    25% {
+        background-image: url(images/2.jpg);
+    }
+
+    50% {
+        background-image: url(images/3.jpg);
+    }
+
+    75% {
+        background-image: url(images/6.jpg);
+    }
+    100% {
+        background-image: url(images/1.jpg);
+    }
+
+
+}
+
+
+
+
+.containner .slider , .containner .form {
+    width: 50%;
+}
+
+.form {
+    padding: 20px;
+    position: relative;
+}
+
+.form-title {
+    margin-bottom: 30px;
+}
+
+.form-title h1 {
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    font-size: 35px;
+}
+
+.main-form div:not(.checkbox) {
+    margin: 25px 10px;
+    border-bottom: 2px solid #11d3f1;
+    color: gray;
+}
+
+.main-form input {
+    border: none;
+    outline: none;
+}
+
+
+
+.main-form .checkbox {
+    margin-left: 15px;
+    
+}
+
+
+.main-form button {
+    padding: 8px 30px;
+    border-radius: 50px;
+    margin-top: 30px;
+    float: right;
+    margin-right: 15px;
+    border: 3px solid #11d3f1;
+    background-color: white;
+    color: #11d3f1;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.main-form button:hover {
+border-color: #76d876;
+color: #76d876;
+}
+
+
+
+.form .socials {
+    position: absolute;
+    bottom: 15px;
+    font-size: 20px;
+   left: 100px; 
+}
+
+.form .socials i {
+    margin: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
